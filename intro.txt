@@ -1,0 +1,47 @@
+#################################################
+RHCSA v9 Course    Redhat enterprise Linux Server
+#################################################
+
+Duration : 5 weeks 
+time     : 4-6 
+wDay     : sun-wed 
+
+Method :  20% theory 
+	  80% practical 	
+
+
+RHCSA v9---> RH124--> 2 weeks -->basics :
+			Exploring archeticture 
+			Basic Commands : cd cp mv touch mkdir 
+			Users & groups :manage Users&groups  useradd  usermod  groupadd 
+			Permissions    : chmod 777   chmod g+w 
+			Process        : ps aux  top  kill 
+			Networking     : how to set ip to the server 
+			installing sft : repository ,yum  dnf 
+			
+
+ ---->RH134  --->3 WEEKS --->professinal 
+		  
+		Managing Storages [partitions] :
+		-traditional way 
+		-LVM
+		-VDO
+		-Stratis
+		-Swap
+
+	       Managing containers:
+		Configure podman container : pull image 
+					     mount storage
+					     start as service 
+ 
+		Firewall : managing        : define inbound rule &outbound
+		Selinux[7 layer security]  : context : /apps  default 
+     
+
+
+
+
+
+
+
+ 
