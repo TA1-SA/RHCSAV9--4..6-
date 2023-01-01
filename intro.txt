@@ -13,29 +13,31 @@ Method :  20% theory
 RHCSA v9---> RH124--> 2 weeks -->basics :
 			Exploring archeticture 
 			Basic Commands : cd cp mv touch mkdir 
-			Users & groups :manage Users&groups  useradd  usermod  groupadd 
+			*Users & groups :manage Users&groups  useradd  usermod  groupadd 
 			Permissions    : chmod 777   chmod g+w 
 			Process        : ps aux  top  kill 
-			Networking     : how to set ip to the server 
-			installing sft : repository ,yum  dnf 
+			*Networking     : how to set ip to the server 
+			*installing sft : repository ,yum  dnf 
 			
 
  ---->RH134  --->3 WEEKS --->professinal 
 		  
-		Managing Storages [partitions] :
+		*Managing Storages [partitions] :
 		-traditional way 
 		-LVM
 		-VDO
 		-Stratis
 		-Swap
 
-	       Managing containers:
+	       *Managing containers:
 		Configure podman container : pull image 
 					     mount storage
 					     start as service 
  
 		Firewall : managing        : define inbound rule &outbound
-		Selinux[7 layer security]  : context : /apps  default 
+		*Selinux[7 layer security]  : context : /apps  default 
+		
+		
      
 
 
