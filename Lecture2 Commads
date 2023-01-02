@@ -1,0 +1,81 @@
+su - 
+    2  ls -l
+    3  mkdir dir1
+    4  touch file1 file2 file3 file4
+    5  mkdir dir2 dir3 dir4
+    6  ls -l 
+    7  mv file1 dir1
+    8  mv file2 dir2
+    9  mv file3 dir3
+   10  mv file4 dir4
+   11  ls -l
+   12  man ren
+   13  mv dir1 dir100
+   14  ls 
+   15  touch file100
+   16  ls
+   17  cp file100 dir100/file1 
+   18  ls dir100/
+   19  ls
+   20  echo im mohammad 
+   21  echo im mohammad >> file100 
+   22  cat file100 
+   23  mv file100 file1
+   24  ls
+   25* 
+   26  touch dir1/file1 dir2/file2 file3 file4
+   27  ls dir2
+   28  mkdir dir1
+   29  touch dir1/file1 dir2/file2 file3 file4
+   30  ls
+   31  rm file1
+   32  ls
+   33  rmdir dir100/
+   34  rmdir dir4
+   35  rmdir dir3
+   36  man rmdir 
+   37  rm dir100
+   38  man rm
+   39  rm dir100
+   40  rm -r  dir100
+   41  ls 
+   42  rm -r  dir1
+   43  rm -r  dir3
+   44  rm -r  dir4
+   45  cls
+   46  ls
+   47  rm -r dir2/
+   48  ls
+   49  mkdir dir{1..4}
+   50  ls
+   51  rm -r dir{1,4}
+   52  ls
+   53  mkdir Abadnet
+   54  mkdir Abadnet/{Linux,Windows,NetWork}
+   55  ls Abadnet/
+   56  mkdir Abadnet/Linux/ Abadnet/Windows/ Abadnet/NetWork/
+   57  ls -l Abadnet/
+   58  rm -r Abadnet/
+   59  ls
+   60* 
+   61  mkdir -p Abadnet/Linux/ Abadnet/Windows/ Abadnet/NetWork/
+   62  ls
+   63  rm -r Abadnet/*
+   64  ls
+   65  ls Abadnet/
+   66  pwd
+   67  cp dir2 dir3 Abadnet
+   68  ls Abadnet/
+   69  cp -r  dir2 dir3 Abadnet
+   70  ls Abadnet/
+   71  ls
+   72  touch dir2/file100
+   73  ls
+   74  ls dir2
+   75  mv dir2/file100  ~
+   76  ls
+   77  ls dir1
+   78  ls dir2
+   79  pwd
+   80  su -
+   81  history 
