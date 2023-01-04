@@ -1,0 +1,36 @@
+vim -->editor for linux 
+
+Usage:
+
+vi file1 :
+when you enter the file ,you are now in commands mode 
+
+i---> insert mode 
+a--->go to next character then begin insert mode  
+o--->step down then begin insert mode
+O--->stepdown the current line then the current line we be blank -so insert mode begin
+
+to exit all modes -->ESC
+
+to save       :command mode ---> press ESC    :w 
+to save&exit  :command mode ---> press ESC    :wq
+to exit without saving :command mode ---> press ESC    :q!          :q    
+
+
+delete current line --> dd ---> commands mode
+
+copy current line -->yy --->command mode
+past --------------->pp--->command mode
+
+last line in the file : G
+first line: gg 
+
+to display files :
+
+	cat file1
+  349  tail file1
+  350  head file1
+  351  head -1 file1
+  352  tail -1 file1
+  353  more file1
+  354  less file1

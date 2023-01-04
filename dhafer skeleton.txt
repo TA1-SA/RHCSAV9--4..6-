@@ -1,0 +1,40 @@
+tv_season1_episode1.ogg tv_season1_episode2.ogg tv_season1_episode3.ogg
+tv_season1_episode4.ogg
+tv_season1_episode5.ogg
+tv_season1_episode6.ogg
+
+tv_season2_episode1.ogg
+tv_season2_episode2.ogg
+tv_season2_episode3.ogg
+tv_season2_episode4.ogg
+tv_season2_episode5.ogg
+tv_season2_episode6.ogg
+
+
+ 
+
+
+navigation [two ways]:
+1-relative 
+
+2-absolute  /
+
+
+
+
+ 						/
+	
+						home
+						
+						student
+
+					Videos 	Desktop  *Document  file13 
+
+
+cd Desktop 
+
+
+
+1-    cd ..                                                                 cd , cd ~   home directory
+
+2-  cd /home/student 
