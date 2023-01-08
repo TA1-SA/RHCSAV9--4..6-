@@ -1,0 +1,63 @@
+##################################
+Permissions in linux
+##################################
+
+
+1-Read    r                    4
+
+file :-->display content  [cat less more head tail]
+
+directory--> display directory content [ls]
+
+2-write   w                     2
+
+file :-->modify file content 
+
+directory--> modify directory content [touch  ,mkdir ,rm ,rmdir]
+
+
+3-execute x                     1
+
+file :-->execute script
+
+directory--> change to directory [cd]
+
+
+-----------------
+
+3 levels of permissions in linux :
+
+1-user owner
+
+2-group owner
+
+3-other
+
+
+drwxrwx---. 33 student  student  4096 Nov  5 11:06 apache
+-rw-rw----.  1 student  student   581 Nov  4 11:41 containers.txt    chmod o=- containers.txt  chmod o-rw cont
+drwx------.  2 student  student    20 Jan  3 08:22 Desktop           chmod g+rx Desktop
+drwxrwx---.  3 student  student    19 Oct 15 13:07 dir1              chmod -R o=-  .
+drwxr-x---.  2 student  student     6 Oct 15 13:06 dir2                     
+drwxr-x---.  2 root     root        6 Nov  4 13:23 dir2020
+drwxr-x---.  2 student  student     6 Oct 15 13:06 dir3
+drwxr-x---.  2 student  student     6 Dec 24 05:30 dir5
+drwxr-x---.  2 student  student    20 Jan  3 08:32 Documents
+-rwxrw----.  1 student  student   235 Jan  4 08:34 file1                chmod g+w file1 // chmod 760 file1    //   chmod u+x file1
+-rw[x] rw-[r]--.  1 student  student     0 Oct 15 12:24 file13       ///chmod u+x file13  chmod o+r file13       //chmod 764 file13
+drwxr-x---.  2 student  student    20 Oct 15 13:05 Music
+drwxr-x---.  2 student  student     6 Oct 15 11:34 Pictures
+drwxr-x---.  2 student  student     6 Oct 15 11:34 Templates
+drwxrwx---.  2 student  student     6 Oct 15 11:34 Videos
+drwxr-x---.  2 student6 ABADNET6    6 Nov  4 11:32 wwwlogs
+
+
+
+
+
+
+
+
+
+
+
