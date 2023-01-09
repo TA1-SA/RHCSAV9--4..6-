@@ -1,0 +1,23 @@
+process : any running program .
+
+properties : 
+
+1-every process has id  [PID]
+2-every process has allocated resource [RAM ,CPU,Storage]
+3-every Process has a privlige 
+4-every process has state  : 
+    -Running  -->R
+	 -sleeping --->S  D K 
+		-suspeneded ---> T  T  ----> BY USER
+			-Zombie  ----> Z  X
+
+
+Commands:
+
+- ps aux   prcoess detail   PID 
+- ps ef  process detail with parent  PID  PPID
+-kill -9  kill by force 
+-kill -SIGSTOP  suspend 
+-KILL -SIGCONT  continue
+-KILL -SIGTERM  kill by termination 
+     
