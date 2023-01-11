@@ -1,0 +1,39 @@
+###############################
+Managing Partitions
+###############################
+
+partition : disk space mount into directory 
+ /dev/sda1    /app
+
+Commands :
+
+-lsblk 
+-fdisk -l /dev/sda 
+
+Disks in Linux :
+1-  sda  sdb sdc sdd 
+2- vda  vdb vdc vdd 
+
+Commands
+ 48  lsblk
+   49  fdisk /dev/sdb
+   50  partprobe
+   51  mkfs.ext4 /dev/sdb1
+   52  mkdir /backup[
+   53  mkdir /backup
+   54  vi /etc/fstab
+   55  echo /dev/sdb1 /backup ext4 defaults 0 0  >> /etc/fstab
+   56  mount -a
+   57  df -h
+   58  lsblk
+   59  fdisk /dev/sdb
+   60  partprobe
+   61  mkfs.ext4 /dev/sdb2
+   62  mkdir /archive
+   63  echo /dev/sdb2 /archive/ ext4 defaults 0 0 >>/etc/fstab
+   64  mount 0a
+   65  mount -a
+   66  vi /etc/fstab
+   67  mount -a
+   68  df -h
+   69  history
