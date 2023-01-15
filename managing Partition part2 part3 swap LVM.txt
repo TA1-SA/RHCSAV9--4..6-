@@ -1,0 +1,65 @@
+###########################
+Managing Partitions part2
+##########################
+SWAP : Virtual RAM stored into disk [volume]
+
+
+Commands 
+
+ 605  lsblk
+  606  fdisk /dev/sdj
+  607  mkswap /dev/sde1
+  608  echo /dev/sde1 swap swap defaults 0 0 >> /etc/fstab
+  609  mount -a
+  610  free-
+  611  free -h
+  612  swapon  /dev/sde1
+  613  swapoff  /dev/sde1
+  614  swapon  /dev/sde1
+  615  free -h
+  616  history
+=============================================
+###########################
+Managing Partitions part3
+##########################
+
+Logical Volume Management [LVM]: software to combine more than one disk togather to become one logical volume 
+
+configuring LVM :
+1-choose the physical Volume /dev/sdc[5G] /dev/sdd [5G]
+2-adding the volume to LVM system [pvcreate /dev/sdc  /dev/sdd]
+3-create volume group [vgcreate Storage  /dev/sdc /dev/sdd]      [10G]
+4-create Logical Volume from the Volume Group [Storage] [lvcreate -n st1 -L 8G Storage]
+5-format the disk [mkfs.ext4 /dev/Storage/st1 ]
+6-write it into fstab  [ echo /dev/Storage/st1 /storage ext4 defaults 0 0 >>/etc/fstab]
+7-mkdir /storage
+8-mount -a 
+9- df -h 
+
+Commands :
+   37 pvcreate /dev/sdd /dev/sdc
+   38  vgcreate Storage /dev/sdc /dev/sdd
+   39  lvcreate -n st1 -L 8G Storage
+   40  mkfs.ext4 /dev/Storage/st1
+   41  mkdir /storage
+   42  echo /dev/Storage/st1 /storage/ ext4 defaults 0 0 >>/etc/fstab
+   43  mount -a
+   44  df -h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
