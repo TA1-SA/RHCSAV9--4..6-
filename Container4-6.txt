@@ -1,0 +1,16 @@
+#################################
+Containers
+#################################
+
+non-completed operating system  ,enables you to deploy your application accross servers
+without configuring and downloading applicatoin stuff 
+
+
+Container Engine:
+1-Docker [MS]      previously sponsored by redhat  
+**2-Podman [Open source]  sponsored by redhat  
+
+Redhat course: 
+1-pull container
+2-mount presistent storage
+3-Start container as service 
