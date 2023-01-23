@@ -45,3 +45,21 @@ Networking since redhat 7 managed by Network Manager
 
 -to set new hostname 
    $hostnamectl set-hostname server1.abadnet.com
+
+
+
+=========================================================
+Lecture Commands
+332  nmcli connection add con-name static1 ifname ens32 type ethernet        autoconnect yes ipv4.addresses 192.168.20.13/24 ipv4.dns 192.168.100.1 ipv4.gateway              192.168.200.1 ipv4.method manual
+  333  nmcli connection show
+  334  nmcli device show
+  335  nmcli connection show
+  336  nmcli connection up static1
+  340  nmcli connection up static1
+  341  nmcli device show
+  343  netstat
+  344  netstat -a
+  345  ss -lt
+  349  nmcli connection add  ifname ens32 type ethernet     autoconnect yes        ipv4.addresses 192.168.20.13/24 ipv4.dns 192.168.100.1 ipv4.gateway 192.168.200.1            ipv4.method manual
+  358  su -
+  359  hostnamectl set-hostname server1.abadnet.com
