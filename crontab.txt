@@ -1,0 +1,14 @@
+Crontab : service for schedualing tasks [scripts]
+
+crontab -e 
+ 
+
+* minutes     * hours    * days of month          * months      *day of week  
+ 
+ *               *               *                   *               *     Command   
+
+0 9 2 2 * ./script1
+
+*/30  9-16  * * sun-thu  ./script2
+
+0  0   * * * /backupdb
