@@ -1,0 +1,66 @@
+################################
+archiving and compression 
+################################
+
+archiving for list of files or dir    
+
+$ tar cf etc.tar  /etc                  ---25mb 
+
+**compression : 
+1- gzip     $tar cfz etc.tar.gz  /etc
+
+2- bzip2    $tar cfj etc.tar.bz2 /etc
+
+3- xz       $tar cfJ etc.tar.xz /etc 
+
+
+############################
+Lecture Commands :
+
+on Application server :[archive&Compress] 
+
+  578   tar cf etc.tar /etc
+  583   tar cf etc.tar /etc
+  585  scp etc.tar  student@192.168.200.247:/home/student
+  586   tar zcf etc.tar.gz /etc
+  587   tar cjf etc.tar.bz2 /etc
+  588   tar cfJ etc.tar.xz /etc
+  591  ls -lh
+  593  scp etc.tar.gz   student@192.168.200.247:/home/student
+  594  scp etc.tar.xz    student@192.168.200.247:/home/student
+  595  scp etc.tar.bz2     student@192.168.200.247:/home/student
+
+
+
+on backup server: [extract files]
+  225  tar xf etc.tar
+  226  ls
+  227  tar xzf etc.tar.gz
+  228  tar xjf etc.tar.bz2
+  229  tar xJf etc.tar.xz
+
+######################################
+synchronizing folders between servers 
+
+
+**on backup server student@192.168.200.247 :
+
+   242  mkdir AppConBk
+
+
+** on application server[your own server ] 
+
+ 618  mkdir /AppConfig
+ 619  touch /AppConfig/file{1..10}
+ 620  rsync -av /AppConfig/   student@192.168.200.247:/home/student/AppConBk
+
+
+
+
+
+
+
+
+
+
+
