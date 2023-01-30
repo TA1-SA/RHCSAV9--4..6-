@@ -1,0 +1,62 @@
+#####################################################
+logs 
+#####################################################
+
+logs managed by rsyslog service 
+
+  
+Lecture Commands :
+
+  136  tail /var/log/secure
+  137  tail /var/log/messages
+  138  tail /var/log/boot.log
+  139  tail /var/log/boot.log-20230105
+  140  more /var/log/boot.log-20230105
+  141  more /var/log/audit/audit.log
+  142  vi /etc/rsyslog.conf
+  143  more /var/log/boot.log-20230105
+  144  clear
+  145  journalctl -xn
+  146  journalctl --since today
+  147  journalctl _SYSTEMD_UNIT=ssh
+  148  journalctl _SYSTEMD_UNIT=sshd
+  149  journalctl _SYSTEMD_UNIT=sshd.service
+  150  journalctl _SYSTEMD_UNIT=sshd.service  --since today
+  151  journalctl _SYSTEMD_UNIT=sshd.service  --since today _UID=1000
+  152  journalctl _SYSTEMD_UNIT=sshd.service  --since today _UID=0
+  153  journalctl _SYSTEMD_UNIT=sshd.service  --since today _UID=0       _HOSTNAME=backup.example.com
+
+
+
+##############################################################
+linux priority [nice level]
+##############################################################
+
+nice level
+
+-20   -------> +19  
+
+lower number means high priority
+
+Commands :
+
+$top 
+
+
+
+$nice -n -1  tar cf etc.tar /etc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
