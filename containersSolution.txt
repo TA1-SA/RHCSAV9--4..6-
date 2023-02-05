@@ -17,5 +17,5 @@ $ cd .config/systemd/user/
 $ podman generate systemd --name apache1 --files 
 $ systemctl --user daemon-reload
 $ systemctl --user enable container-apache1.service
-$systemctl show-user
-$systemctl enable-ligner
+$loginctl show-user
+$loginctl enable-ligner
